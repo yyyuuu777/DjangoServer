@@ -18,5 +18,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    # You can use the method of import , first param is url rex , the second param is deal method
     url(r'^blog/index/$','djangoServer.blog.views.index'),
+    url(r'^blog/user_info/$','djangoServer.blog.views.user_info'),
+    url(r'^add$','djangoServer.blog.views.add'),
 ]

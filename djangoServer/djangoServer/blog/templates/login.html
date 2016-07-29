@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ girl.name }}</title>
+</head>
+<body>
+<h2>demo</h2>
+<h3>{{ girl.length }}</h3>
+{% for item in girl %}
+    <h1>The name from db is{{ item.name }}</h1>
+{% endfor %}
+<form action="/add" method="post">
+    <input name="name" type="text" placeholder="用户名">
+    <input name="pass" type="text" placeholder="密码">
+    <button type="submit" value="login"></button>
+</form>
+</body>
+</html>
